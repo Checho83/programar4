@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<%- include ('./partials/head', {hojaDeEstilo: 'style.css' , titulo:'home'}) %>
+
+  <body>
+    <%- include ('./partials/header', {hojaDeEstilo: 'style.css' , titulo:'home'}) %>
+      <main>
+        <hr>
+        <div class="menu_contenedor">
+          <div class="descripcion">
+            <h2>SERGIO SAMBUELLI</h2>
+            <h3>Ing. Electrónico</h3>
+            <div>Soy una persona muy activa,
+              organizada y responsable, con
+              buenas relaciones interpersonales.
+              Siempre me ha gustado la electrónica
+              y la programación y estoy en
+              busqueda de un puesto desafiante
+              donde pueda continuar creciendo.</div>
+            <a href="mailto: sergiosambuelli@gmail.com" style="text-decoration:none;color:white"><i
+                class="fa-regular fa-envelope"></i><i class="mail"> sergiosambuelli@gmail.com</i></a>
+            <div><i class="fa-sharp fa-solid fa-phone"></i><i> 3516665746</i></div>
+            <i class="fa-solid fa-location-dot"
+              style="text-decoration:none;color:white; font-style: italic;font-size: normal;"> Cordoba, Cordoba,
+              Argentina </i>
+          </div>
+          <div><img class="fotoImg" src="images/foto_CV.jpg"></div>
+        </div>
+
+        <hr>
+
+      </main>
+
+      <%- include ('./partials/footer', {hojaDeEstilo: 'style.css' , titulo:'footer'}) %>
+
+  </body>
+
+</html>

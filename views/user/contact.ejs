@@ -1,0 +1,73 @@
+<html class="letra">
+
+<%- include ('../partials/head', {hojaDeEstilo: 'style.css', titulo:'contacto'}) %>      
+
+<body>
+  <%- include ('../partials/header', {hojaDeEstilo: 'style.css', titulo:'contacto'}) %>  
+    <main>
+        <br>
+        <div class="contacto">
+        <form id="form" >
+
+            <br>
+            <h3 >Atendemos a tu consulta...</h3>
+            <div class="textAreaConsulta">
+                <!-- <label  for="price">Introduce tu E-Mail</label>  -->
+                        <div><input  style="margin:auto" type="text"
+                            name="name" 
+                            id="name" 
+                            placeholder="nombre?" 
+                            size="30"
+                            minlength="2" 
+                            maxlength="40" 
+                            required
+                            >      
+                        </div>
+                        <br>
+                        <input  style="margin:auto" type="email"
+                            name="email" 
+                            id="email" 
+                            placeholder="mail?" 
+                            size="30"
+                            required
+                        >      
+                        <br>
+    
+            </div>
+            <br>
+            <div class="textAreaConsulta">
+                <!-- <label  for="question">Detalla tu consulta:</label> -->
+                    <textarea 
+                        name="message" id="message"
+                        rows="10" style="width:100%"  
+                        placeholder="Detalla tu consulta!"  
+                        required
+                    ></textarea>
+
+                    
+                <div class="buttonConsult">
+                   <div>
+                    <input type="submit" id="button" value="Mandar consulta" >
+                   </div>                   
+                </div>
+            </div>
+            <br>
+        </form>
+    </div>
+    </main>    
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('WODnrZBGPyjzoPMtU')
+</script>
+
+
+<script src="/javascripts/answer.js"></script>  
+    
+
+<%- include ('../partials/footer', {hojaDeEstilo: 'style.css', titulo:'footer'}) %>  
+
+</body>
+</html>
